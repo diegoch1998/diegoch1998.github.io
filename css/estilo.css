@@ -1,0 +1,871 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#580099;
+    color:white; 
+}
+
+header .titulo{
+  padding: 30px;
+}
+
+header h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header p{
+    text-align: center;
+}
+
+.logo{
+  float: left;
+  width: 200px;
+}
+
+.logo_header{
+  float: left;
+  clear: none;
+  padding-left: 70px;
+  padding-top: 25px;
+  padding-bottom: 0px;
+}
+
+body {
+  background-color: lavender;
+  min-width:400px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.topnav {
+  background-color: #be66ff;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  margin-right: 80px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  background-color: #d499ff;
+  color: black;
+}
+
+footer{
+    float:right;
+    width: 100%;
+    background: #580099;
+    color:white;
+    padding: 10px;
+}
+
+footer p{
+  padding-left: 10px;
+  text-align: center;
+}
+
+.eventos {
+    padding: 20px;
+    width: 100%;
+    float:left;
+}
+
+.eventos2{
+  padding-left: 20px;
+  width:40%;
+  float:left;
+}
+
+.eventos2 h2 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.eventos2 ul{
+  padding-left: 30px;
+}
+
+.eventos h2 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.eventos ul{
+  padding-left: 30px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    height: 10%;
+}
+
+
+/* Container donde se encuentran las fotos y el overlay para mostrar título */
+.container {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#icono_busqueda{
+  width: 20px;
+  margin-left: 10px;
+}
+
+
+.destacado h1{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.proximos_eventos h1{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.destacado h3{
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.info_destacado{
+  margin-left: 400px;
+  margin-right: 100px;
+}
+.info_destacado h1{
+  text-align: left;
+}
+.info_destacado p{
+  text-align: justify;
+}
+
+.proximos_eventos{
+  clear: both;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+/*Slideshow*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  float: left;
+  width: 300px;
+  position: relative;
+  margin: auto;
+  margin-left: 50px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*CALENDARIO*/
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #580099;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+.calendario{
+  margin: 50px;
+}
+
+/*FIN DEL CALENDARIO*/
+
+/*CALENDARIO BUSQUEDA*/
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month_busqueda {
+  padding: 15px 5px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month_busqueda ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month_busqueda ul li {
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.month_busqueda .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays_busqueda {
+  margin: 0;
+  padding: 5px 0;
+  background-color: #ddd;
+}
+
+.weekdays_busqueda li {
+  display: inline-block;
+  width: 11%;
+  color: #666;
+  font-size: 15px;
+  text-align: center;
+}
+
+.days_busqueda {
+  padding: 5px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days_busqueda li {
+  list-style-type: none;
+  display: inline-block;
+  width: 11%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size:12px;
+  color: #777;
+}
+
+.days_busqueda li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+.calendar_busqueda{
+  margin-right: 25px;
+  margin-top: 50px;
+}
+
+.c17{
+  visibility: hidden;
+  position: fixed;
+  z-index: 100;
+  height: 450px;
+  width: 400px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  background: #d499ff;
+  line-height: 1.5;
+  position: relative;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.eventos h1{
+  margin: 15px;
+}
+
+.comentario{
+  float: left;
+  padding: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 20px;
+  background-color: #eaccff;
+  clear: both;
+}
+
+.comentario a{
+  color: #336699;
+  padding: 0px;
+  font-size: 17px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0px; /*Empieza con width 0 */
+  margin-top: 200px;
+  margin-bottom: 50px;
+  position: fixed;
+  z-index: 1; /*Mantiene arriba*/
+  top: 0;
+  right: 0;
+  background-color: #f2f2f2; 
+  overflow-x: hidden; /* Para que no se pueda hacer scroll horizontalmente*/
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/* Entradas de texto*/
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/*Muestra las labels al lado de los inputs*/
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/*Botón de enviar*/
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/*Formulario para introducir nuevos comentarios*/
+.comments_form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  bottom: 0;
+}
+
+.nombre_campo {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.campo_introducir {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.campo_comentario{
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  height: 100px;
+}
+
+/* Limpiar floats después de columna */
+.fila:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.fecha{
+  float: right;
+  padding-top: 5px;
+}
+
+.icono{
+  float: right;
+  width: 100px;
+  margin-right: 200px;
+  clear: both;
+}
+
+.boton_comentarios{
+  position: fixed;
+  padding-top: 300px;
+  padding-left:1200px;
+}
+
+.filtro{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #580099;
+  float: right;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.res_eventos{
+  width:60%;
+  float:left;
+}
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 40%;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+.res_eventos button{
+  padding: 5px;
+}
+
+.days_busqueda li:hover{
+  background-color: #d499ff;
+  color: black;
+}
+
+.seleccionar_dia {
+  cursor: pointer;
+}
+
+.evento_busqueda1{
+  float: left;
+  padding: 20px;
+  z-index: 100;
+  visibility: hidden;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: #eaccff;
+  clear: both;
+}
+
+.evento_busqueda2{
+  float: left;
+  padding: 20px;
+  visibility: hidden;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: #eaccff;
+  clear: both;
+}
+
+.image2{
+  height: auto;
+  float:left;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.descripcion{
+  float:right;
+  width: 80%;
+  padding-top: 30px;
+  padding-right: 100px;
+}
+
+.descripcion p{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.mapa{
+  float:right;
+  width:50%;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.foto_evento{
+  float:left;
+  width:20%;
+  padding:50px;
+}
+
+.b17{
+  background-color: #be66ff;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 10%;
+}
+
+.slideshow-container2 {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot2:hover {
+  background-color: #717171;
+}
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color:white;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(189, 195, 199, 0.7);
+}
+
+#btndestacado{
+  float: right;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #be66ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.prev, .next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next3:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 6px;
+    font-size: 10px;
+  }
+  .topnav {
+    background-color: #be66ff;
+  }
+
+  .info_destacado{
+    margin-left: 260px;
+    margin-right: 20px;
+  }
+
+  .info_destacado h1{
+    text-align: left;
+  }
+  .info_destacado p{
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .slideshow-container {
+    float: left;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    margin-left: 50px;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    height: 10%;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:1;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .calendar_busqueda{
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
