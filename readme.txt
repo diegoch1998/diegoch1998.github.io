@@ -1,1 +1,1 @@
-Abrir el archivo portada.html situado en la carpeta html.
+Abrir el archivo index.html
